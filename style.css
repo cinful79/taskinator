@@ -54,9 +54,33 @@ form input {
   border-radius: 12px;
 }
 
+form .text-input{
+  /*
+  display: flex;
+  */
+  flex: 1;
+  width: 100%;
+}
+
+form .select-dropdown{
+  display: flex;
+  flex: 1;
+  width: 50%;
+}
+
 form .form-group {
+  display: flex;
   margin: 10px 6px 10px 0;
   flex: 1;
+}
+
+form .form-group .btn{
+  /*
+  display: flex;
+  justify-content: flex-end;
+  flex: 3;
+  */
+  width: 33%;
 }
 
 footer {
@@ -131,7 +155,7 @@ footer {
 
 .task-actions button,
 .task-actions select {
-  flex: 1;
+  flex: 2;
 }
 
 .btn {
@@ -180,7 +204,7 @@ footer {
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
-  background-image: url("../images/select-arrow.svg");
+  background-image: url('../images/select-arrow.svg');
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
@@ -220,6 +244,31 @@ footer {
   form .form-group {
     flex: 1 100%;
   }
+
+  form .text-input{
+    display: block;
+    flex: 1;
+    width: 100%;
+  }
+  
+  form .select-dropdown{
+    display: block;
+  
+    width: 100%;
+  }
+  
+  form .form-group {
+    display: block;
+    margin: 10px 6px 10px 0;
+    flex: 1;
+  }
+  
+  form .form-group .btn{
+    display: block;
+    justify-content: flex-end;
+
+  }
+  
 
   form .form-group button {
     width: 100%;
